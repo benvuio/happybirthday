@@ -68,10 +68,18 @@
                     <h1 onclick="showMessage()" class="avatar__title">Yến Linh</h1>
                 </div>
                 
-                <!-- 5. Phần nhạc -->
-                <audio id="player" autoplay loop>
-                    <source src="./music.mp3" type="audio/mp3">
-                </audio>
+               <!-- 5. Phần nhạc -->
+<audio id="player" loop>
+    <source src="./music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    // Sử dụng JavaScript để phát nhạc khi người dùng click vào trang
+    document.body.addEventListener('click', function() {
+        document.getElementById('player').play();
+    });
+</script>
+
             </div>
         </div>
         <script>
@@ -82,7 +90,7 @@
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
                     title: "Lời nhắn", // Tiêu đề của popup
-                    text:"chúc mừng sinh nhật", // Nội dung lời nhắn
+                    text:"Nghe đồn hôm nay ai đó lớn thêm một tuổi. Chúc cô Ngưu nhỏ tuổi mới nhẹ lòng hơn, vui nhiều hơn, và gặp được ai đó biết cách làm em cười mỗi ngày :)) ", // Nội dung lời nhắn
                     button: {
                         text: "❤️️",
                     },
